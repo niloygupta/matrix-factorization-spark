@@ -168,9 +168,9 @@ def main():
     global beta_value
     global lambda_value
 
-    #sc = SparkContext("local[3]", "SGD-Matrix")
-    #sc = SparkContext(appName="testing")
-    sc = SparkContext("spark://ip-172-31-14-252.us-west-2.compute.internal:7077", "SGD-Matrix")
+    #sc = SparkContext("local", "SGD-Matrix")
+    sc = SparkContext(appName="SGD-Matrix")
+    #sc = SparkContext("spark://ip-172-31-14-252.us-west-2.compute.internal:7077", "SGD-Matrix")
     num_factors = int(sys.argv[1])
     num_workers = int(sys.argv[2])
     num_iterations = int(sys.argv[3])
