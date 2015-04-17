@@ -1,0 +1,31 @@
+---------------------------------------------------
+Autograding ...
+---------------------------------------------------
+The stderr will be logged to file  autolab.log
+command you are executing  ./spark/bin/spark-submit dsgd_mf.py 20 3 100 0.9 0.5 s3n://niloygemrdevbucket/autolab_train.csv w.csv h.csv
+Analyzing your memory usage and Efficiency..
+
+testing  1
+
+time (s): 860.32597208
+memory (byte): 484296
+testing  2
+
+time (s): 857.970165968
+memory (byte): 484296
+testing  3
+
+time (s): 889.952867031
+memory (byte): 484296
+testing  4
+
+time (s): 880.742134809
+memory (byte): 484296
+testing  5
+
+time (s): 852.946324825
+memory (byte): 492600
+
+               
+average time usage (s): 868.387492943
+average memory usage (byte): 485956
