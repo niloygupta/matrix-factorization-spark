@@ -1,0 +1,13 @@
+To execute the program you need to run the following file:
+
+spark-submit dsgd_mf.py 100 10 50 0.8 1.0 input.csv w.csv h.csv
+
+1st Argument: Number of factors
+2nd Argument: Number of workers
+3rd Argument: Number of Iterations
+4th Argument: Beta
+5th Argument: Lamda (regularization parameter)
+6th Argument: Input dataset in csv format (user id, movie id, rating)
+7th argument: Outfile for W
+8th argument: Outfile for H
+
