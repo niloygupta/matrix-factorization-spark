@@ -47,7 +47,9 @@ def load_data(inputV_filepath,num_factors,num_workers,sc):
     partitions = data.keyBy(lambda x: createStratum(x, num_workers, block_size[0],block_size[1]))
     W = np.random.random_sample((maxUserId, num_factors))
     H = np.random.random_sample((num_factors, maxMovieId))
-
+    
+    partitions.cache()
+    
     return partitions,W,H,block_size
 
 
